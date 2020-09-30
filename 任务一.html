@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <p>基本选择器</p>
+    <p>基本选择器有5种</p>
+    <ul>
+        <li>元素选择器</li>
+        <li id="a">id选择器</li>
+        <li class="b">class选择器</li>
+        <li >群组选择器</li>
+        <li>*选择器</li>
+    </ul>
+    <script>
+        $(function(){
+            $('li').css();
+            $('#a').css();
+            $('.b').css();
+            $('*').css();
+        });
+    </script>
+</body>
+</html>

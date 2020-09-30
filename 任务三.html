@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div>
+        <img src="img/1.jpg" alt="">
+        <p>这里种了一个草莓</p>
+        <img src="img/2.jpg" alt="">
+        <p>这里养了一条鱼</p>
+        <button>若干年后</button>
+    </div>
+    <script>
+        $(function(){
+            $('button').click(function(){
+                $('img:eq(0)').attr('src','img/3.jpg');
+                $('p:eq(0)').html('这里长了一片草莓');
+                $('img:eq(1)').attr('src','img/4.jpg');
+                $('p:eq(1)').html('鱼死掉了');
+            });
+        });
+    </script>
+</body>
+</html>
