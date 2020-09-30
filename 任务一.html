@@ -18,10 +18,25 @@
     </ul>
     <script>
         $(function(){
-            $('li').css();
-            $('#a').css();
-            $('.b').css();
-            $('*').css();
+			$('p:eq(0)').click(function(){
+				$(this).css('background','red');
+			});
+			$('p:eq(1)').click(function(){
+				$(this).css('background','blue');
+			});
+			$('li').click(function(){
+				$('li').css('margin','30px');
+			});
+			$('#a').click(function(){
+				$('#a').css('background','red');
+			});
+			 $('.b').click(function(){
+				 $('.b').css('background','blue');
+			});
+			$('*').click(function(){
+				$('*').css('font-size','30px');
+			});
+            
         });
     </script>
 </body>
