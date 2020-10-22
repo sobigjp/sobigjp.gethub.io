@@ -247,6 +247,12 @@ main{
     width:320px;
     
 }
+.about-jn i{
+    font-style: normal;
+    font-weight: 300px;
+    color:#757575;
+    font-size: 14px;
+}
 .about-jn b{
     display: inline-block;
     width:80px;
