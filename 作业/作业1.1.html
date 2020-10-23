@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业集合</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        .rw{
+            width:250px;
+            height:auto;
+           border: 1px solid black; 
+           padding:50px;
+           margin: 50px;
+        }
+        img{
+            width:100px;
+            height: 100px;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('#b1-1').click(function(){
+                $('.a1').append('<ul>1</ul>');
+                
+            });
+            $('.b1-2').click(function(){
+                $('.a1 ul').append('<li>我是新的li</li>');
+                
+            });
+            $('.b1-3').click(function(){
+                $('.a1').append('<div>我是新的div</div>');
+                
+            });
+            $('.b1-4').click(function(){
+                $('.a1 div').remove();
+                $('.a1 ul li').remove();
+                $('.a1 ul').remove();
+    
+            });
+            $('.b2-1').click(function(){
+                $('.a2 ul').prepend('<li>西瓜</li>');
+                
+            });   
+            
+            $('.b2-2').click(function(){
+                $('.a2 ul').append("<li>句子</li>");
+                
+            });     
+            $('.b3-1').click(function(){
+                $('.a3 img').before('<span>你好<span>');
+            });
+            $('.b3-2').click(function(){
+                $('.a3 img').after('<span>我好<span>');
+            });       
+            $('.b4-1').click(function(){
+                $('.a4').remove();
+
+            });
+            $('.b4-2').click(function(){
+                $('.a4').empty();
+                
+            });
+            var x;
+	        $(".b5-1").click(function(){
+	        	x=$(".a5 p").detach();
+	        });
+	        $(".b5-2").click(function(){
+	        	$(".a5").prepend(x);
+	        });
+                });
+    </script>
+    
+</head>
+<body>
+    
+    <!-----------------------------任务一开始-------------------------------------->
+    <div class="rw a1">
+        
+        <button id='b1-1'>创建元素</button>
+        <button class='b1-2'>内部添加元素</button>
+        <button class='b1-3'>外部添加元素</button>
+        <button class='b1-4'>删除元素</button>
+    </div>
+    <!----------------------------任务一结束-------------------------------------->
+
+    <!-----------------------------任务二开始-------------------------------------->
+    <div class="rw a2">
+        <p>你喜欢的水果是</p>
+        <ul>
+            
+            <li>苹果</li>
+            <li>香蕉</li>
+            <li>菠萝</li>
+        </ul>
+        <button class='b2-1'>在前面添加</button>
+        <button class='b2-2'>在后面添加</button>
+    </div>
+    <!-----------------------------任务二结束-------------------------------------->
+    <!-----------------------------任务三开始-------------------------------------->
+    <div class="rw a3"><img src="img/mao1.jpg" alt=""> <br>
+        <button class='b3-1'>向前添加</button>
+        <button class='b3-2'>向后添加</button>
+    </div>
+    <!-----------------------------任务三结束-------------------------------------->
+    <!-----------------------------任务四开始-------------------------------------->
+    <ul class="rw a4">
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <li>列表4</li>
+        <button class='b4-1'>remove</button>
+        <button class='b4-2'>empty</button>
+    </ul>
+   <!-------- ---------------------任务四结束-------------------------------------->
+   <!-------- ---------------------任务五开始-------------------------------------->
+   <div class="rw a5">
+    <p>今天天天真不好！！</p>
+       <button class='b5-1'>删除段落</button>
+       <button class='b5-2'>恢复段落</button>
+       
+   </div>
+   <!-------- ---------------------任务五结束-------------------------------------->
+   
+</body>
+
+</html>
